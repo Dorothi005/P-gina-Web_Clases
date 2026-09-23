@@ -23,24 +23,64 @@
   <label for="exampleFormControlInput1" class="form-label">Datos personales</label>
   <h6>Nombre</h6>
   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre completo">
+  
   <h6>Correo electrónico</h6>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electrónico">
+  
   <h6>Teléfono</h6>
   <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su número de teléfono">
+  
+  <h6>Fecha de nacimiento</h6>
+  <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su fecha de nacimiento">
+
   <h6>Región</h6>
   <select class="form-select" aria-label="Default select example">
   <option selected>Seleccione una región</option>
-  <option value="1">Región 1</option>
-  <option value="2">Región 2</option>
-  <option value="3">Región 3</option>
+  <option value="1">La araucanía</option>
+  <option value="2">Los Ríos</option>
+  <option value="3">Los Lagos</option>
+
 </select>
 </div>
+<h5>Datos académicos</h5>
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-<a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="Enseñanza Media" id="Enseñanza Media">
+  <label class="form-check-label" for="Enseñanza Media">
+  Enseñanza Media
+  </label>
 </div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="Técnico" id="Técnico" checked>
+  <label class="form-check-label" for="Técnico">
+  Técnico 
+  </label>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="Universidad" id="Universidad">
+  <label class="form-check-label" for="Universidad">
+  Universitario
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="Técnico" id="Técnico">
+  <label class="form-check-label" for="Técnico">
+    Otro
+  </label>
+</div>
+
+<label for="exampleFormControlInput1" class="form-label">Carrera</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su carrera">
+  
+  <h6>Universidad</h6>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su universidad">
+  
+  <h6>Año de ingreso</h6>
+  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su año de ingreso">
+  
+  <h6>Año de egreso</h6>
+  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su año de egreso">
+  
+  <h6>Promedio ponderado</h6>
+  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su promedio ponderado">
 
 </body>
 </html>
