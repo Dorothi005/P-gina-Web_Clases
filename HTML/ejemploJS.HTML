@@ -1,0 +1,38 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de JavaScript</title>
+    <script>
+        //codigo javascript aquí
+
+        function cambiarImagen() {
+            var img = document.getElementById("ImgGato1");
+            if (img.src.match("cat1.png")) {
+                img.src = "../img/cat2.png";
+            } else {
+                img.src = "../img/cat1.png";
+            }
+        }
+        document.getElementById("ImgGato1").src=".../img/cat1.png"; // Oculta la imagen al cargar la página
+
+        document.getElementById("ImgGato1").addEventListener("click", function() {
+            alert("hello,im a cat. Please dont click me.");
+        });
+        </script>
+    <script>
+        function mostrarMensaje() {
+            alert("an iq to high?");
+            img = document.querySelector('img[alt="Imagen apagada"]');
+        }
+    </script>
+</head>
+<body>
+    <h1>Bienvenido a mi página web</h1>
+    <p>Haz clic en el botón para ver un mensaje:</p>
+    <button onclick="mostrarMensaje()">Do not click this button, or you will face the consequences</button>
+    <img src="../img/cat1.png" alt="Gato" width="300" height="200" id="ImgGato1" alt="Imagen apagada">
+    <img src="../img/cat2.png" alt="Gato" width="300" height="200" id="ImgGato2" alt="encendida">
+</body>
+</html>
