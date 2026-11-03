@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
 <ul id ="lista"></ul>
 <script>
     fetch("datos.json")
@@ -5,5 +13,20 @@
     .then( personas => {
         let html = personas.map(p => `<li>${p.nombre} ${p.apellido}</li>`).join("");
         document.getElementById("lista").innerHTML = html;
-    });
+
+        fetch('../json/datos.json')
+        .then( response => response.json())
+        .then( data => {
+            data.forEach( persona => {
+                const li = document.createElement('li');
+                li.textContent = `${persona.nombre} ${persona.edad}`;
+                lista.appendChild(li);
+            });
+        })
+        .catch( error => console.error('Error al cargar el archivo JSON:', error));
+    })
+    .catch( error => console.error('Error al cargar el archivo JSON:', error));
 </script>
+
+    </body>
+</html>
