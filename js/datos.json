@@ -1,0 +1,11 @@
+[
+    {"Nombre": "Juan Pérez", "Edad": 30, "Correo": "juan.perez@example.com"},
+    {"Nombre": "María Lopez", "Edad": 25, "Correo": "maria.lopez@example.com"},
+    {"Nombre": "Carlos Tapia", "Edad": 35, "Correo": "carlos.tapia@example.com"},
+    {"Nombre": "Ana Martínez", "Edad": 28, "Correo": "ana.martinez@example.com"},
+    {"Nombre": "Luis Fernandéz", "Edad": 40, "Correo": "luis.fernandez@example.com"},
+    {"Nombre": "Sofía Rodríguez", "Edad": 22, "Correo": "sofia.rodriguez@example.com"},
+    {"Nombre": "Diego Sánchez", "Edad": 33, "Correo": "diego.sanchez@example.com"},
+    {"Nombre": "Valentina Torres", "Edad": 27, "Correo": "valentina.torres@example.com"},
+    {"Nombre": "Miguel Ángel", "Edad": 29, "Correo": "miguel.angel@example.com"}
+]
