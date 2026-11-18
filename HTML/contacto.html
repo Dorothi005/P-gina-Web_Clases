@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/contacto.css">
-    <title>Contacto</title>
-    <h2>Formulario de Inscripción</h2>
-    <p class="h5">Complete los siguientes campos para postularse</p>
-</head>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://www.ulagos.cl/wp-content/uploads/2019/11/ulagos-01.png">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Datos personales</label>
-  <h6>Nombre</h6>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre completo">
-  
-  <h6>Correo electrónico</h6>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electrónico">
-  
-  <h6>Teléfono</h6>
-  <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su número de teléfono">
-  
-  <h6>Fecha de nacimiento</h6>
-  <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su fecha de nacimiento">
+    <div class="container mt-4 mb-5">
 
-  <h6>Región</h6>
-  <select class="form-select" aria-label="Default select example">
-  <option selected>Seleccione una región</option>
-  <option value="1">La araucanía</option>
-  <option value="2">Los Ríos</option>
-  <option value="3">Los Lagos</option>
+        <!--Enlace para volver a la página principal -->
+        <a href="../index.html" class="btn btn-outline-secondary mb-3">&larr; Volver al inicio</a>
 
-</select>
-</div>
+        <h2>Formulario de Inscripción</h2>
+        <p class="h5">Complete los siguientes campos para postularse</p>
 
-<h5>Datos académicos</h5>
-<div class="mb-3">
-  <div class="col-form-label">
-  <input class="form-label" type="radio" name="Enseñanza Media" id="Enseñanza Media">
-  <label class="form-check-label" for="Enseñanza Media">
-  Enseñanza Media
-  </label>
-</div>
+        <form>
+            <h5>Datos personales</h5>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo" required>
+            </div>
 
-<div class="form-label">
-  <input class="form-label" type="radio" name="Técnico" id="Técnico" checked>
-  <label class="form-label" for="Técnico">
-  Técnico 
-</label>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <!-- El pattern obliga a tener algo antes del @, algo después y un punto con terminación (ej: prueba123@gmail.cl) -->
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Ingrese un correo válido, por ejemplo: prueba123@gmail.cl" required>
+            </div>
 
-</div>
-  <input class="form-label" type="radio" name="Universidad" id="Universidad">
-  <label class="form-label" for="Universidad">
-  Universitario
-  </label>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
+            </div>
 
-</div>
-  <input class="form-label" type="radio" name="Otro" id="Otro">
-  <label class="form-label" for="Otro">
-    Otra
-  </label>
+            <div class="mb-3">
+                <label for="nacimiento" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="nacimiento" required>
+            </div>
 
-  <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Carrera de Interés</label>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seleccione su carrera de interés">
-  
-  <label for="exampleFormControlInput1" class="form-label">Carrera</label>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su carrera">
-  
-  <h6>Universidad</h6>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su universidad">
-  
-  <h6>Año de ingreso</h6>
-  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su año de ingreso">
-  
-  <h6>Año de egreso</h6>
-  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su año de egreso">
-  
-  <h6>Promedio ponderado</h6>
-  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su promedio ponderado">
+            <div class="mb-3">
+                <label for="region" class="form-label">Región</label>
+                <select class="form-select" id="region">
+                    <option selected>Seleccione una región</option>
+                    <option value="1">La Araucanía</option>
+                    <option value="2">Los Ríos</option>
+                    <option value="3">Los Lagos</option>
+                </select>
+            </div>
 
+            <h5>Datos académicos</h5>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nivel" id="media">
+                    <label class="form-check-label" for="media">Enseñanza Media</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nivel" id="tecnico" checked>
+                    <label class="form-check-label" for="tecnico">Técnico</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nivel" id="universitario">
+                    <label class="form-check-label" for="universitario">Universitario</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="nivel" id="otro">
+                    <label class="form-check-label" for="otro">Otro</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="carrera-interes" class="form-label">Carrera de interés</label>
+                <input type="text" class="form-control" id="carrera-interes" placeholder="Ingrese su carrera de interés">
+            </div>
+
+            <div class="mb-3">
+                <label for="carrera" class="form-label">Carrera</label>
+                <input type="text" class="form-control" id="carrera" placeholder="Ingrese su carrera">
+            </div>
+
+            <div class="mb-3">
+                <label for="universidad" class="form-label">Universidad</label>
+                <input type="text" class="form-control" id="universidad" placeholder="Ingrese su universidad">
+            </div>
+
+            <div class="mb-3">
+                <label for="ingreso" class="form-label">Año de ingreso</label>
+                <input type="number" class="form-control" id="ingreso" placeholder="Ingrese su año de ingreso">
+            </div>
+
+            <div class="mb-3">
+                <label for="egreso" class="form-label">Año de egreso</label>
+                <input type="number" class="form-control" id="egreso" placeholder="Ingrese su año de egreso">
+            </div>
+
+            <div class="mb-3">
+                <label for="promedio" class="form-label">Promedio ponderado</label>
+                <input type="number" class="form-control" id="promedio" min="1" max="7" step="0.1" placeholder="Ingrese su promedio ponderado">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </div>
 </body>
+
 </html>
